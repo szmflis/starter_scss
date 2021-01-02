@@ -1,0 +1,88 @@
+@import '../01_config/variables';
+
+.btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+
+  font-family: inherit;
+  font-size: 1.6rem;
+  letter-spacing: 2.5px;
+  line-height: 48px;
+
+  height: 46px;
+  padding: 0px 3rem;
+  margin: 5px;
+  
+  background-color: #fff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all .3s;
+
+  border-radius: 35px;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  &--primary {
+    background-color: $primary;
+    color: $white;
+    &:hover {
+      background-color: $primaryDarkest;  
+    }
+  }
+
+  &--warning {
+    background-color: $warning;
+    &:hover {
+      background-color: $warningHover;  
+    }
+  }
+
+  &--danger {
+    background-color: $danger;
+    &:hover {
+      background-color: $dangerHover;  
+    }
+
+  }
+  &--success {
+    background-color: $success;
+    color: $white;
+    &:hover {
+      background-color: $successHover;  
+    }
+
+  }
+  &--disabled {
+    background-color: $disabled;
+    cursor: not-allowed;
+    &:hover {
+      transform: none;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &--noradius {
+    border-radius: 0;
+  }
+
+  &--large {
+    height: 52px;
+    padding: 0 3.5rem;
+    font-size: 2rem;
+  }
+
+  &--small {
+    height: 38px;
+    line-height: 38px;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+  }
+
+  &--bordered {
+    border: 15px solid radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  }
+}
