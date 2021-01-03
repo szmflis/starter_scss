@@ -14,10 +14,10 @@
   height: 46px;
   padding: 0px 3rem;
   margin: 5px;
-  
+
   background-color: #fff;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all .3s;
+  transition: all 0.3s;
 
   border-radius: 35px;
 
@@ -30,31 +30,29 @@
     background-color: $primary;
     color: $white;
     &:hover {
-      background-color: $primaryDarkest;  
+      background-color: $primaryDarkest;
     }
   }
 
   &--warning {
     background-color: $warning;
     &:hover {
-      background-color: $warningHover;  
+      background-color: $warningHover;
     }
   }
 
   &--danger {
     background-color: $danger;
     &:hover {
-      background-color: $dangerHover;  
+      background-color: $dangerHover;
     }
-
   }
   &--success {
     background-color: $success;
     color: $white;
     &:hover {
-      background-color: $successHover;  
+      background-color: $successHover;
     }
-
   }
   &--disabled {
     background-color: $disabled;
@@ -83,6 +81,11 @@
   }
 
   &--bordered {
-    border: 15px solid radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border: 15px solid
+      radial-gradient(
+        circle,
+        rgba(63, 94, 251, 1) 0%,
+        rgba(252, 70, 107, 1) 100%
+      );
   }
 }

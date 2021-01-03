@@ -1,27 +1,28 @@
+@import '../01_config/mixins';
+
 .page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: rgb(0,212,255);
-  background: linear-gradient(180deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%, rgba(0,3,150,1) 100%);
+  @include flexbox(column, center, center);
+  background: #3a7bd5;
+  background: -webkit-linear-gradient(to bottom, #3a6073, #3a7bd5);
+  background: linear-gradient(to bottom, #3a6073, #3a7bd5);
 }
 
-.inline-section {
+.flxbox {
+  @include flexbox();
   padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  margin: 1rem;
 
-  .inline-section__backlight {
-    display: flex;
-    flex-direction: row;
+  &--backlit {
+    background-color: rgba(0, 212, 255, 0.2);
+    border-radius: 8px;
+  }
+
+  &--col {
+    flex-direction: column;
+  }
+
+  &--center {
     align-items: center;
     justify-content: center;
-    
-    padding: 3rem;
-    background-color: rgba(0,212,255,0.2);
-    border-radius: 8px;
   }
 }
