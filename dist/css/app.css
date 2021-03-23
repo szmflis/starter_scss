@@ -13,87 +13,71 @@
   margin: 5px;
   background-color: #fff;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all .3s;
+  transition: all 0.3s;
   border-radius: 35px;
 }
-
 .btn:hover {
   transform: translateY(-5px);
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
 }
-
 .btn--primary {
   background-color: #8003fc;
   color: white;
 }
-
 .btn--primary:hover {
   background-color: #6602ca;
 }
-
 .btn--warning {
   background-color: #f5a119;
 }
-
 .btn--warning:hover {
   background-color: #dc8b09;
 }
-
 .btn--danger {
   background-color: #ff474e;
 }
-
 .btn--danger:hover {
   background-color: #ff1f26;
 }
-
 .btn--success {
   background-color: #08ba67;
   color: white;
 }
-
 .btn--success:hover {
   background-color: #069351;
 }
-
 .btn--disabled {
   background-color: #dbdbdb;
   cursor: not-allowed;
 }
-
 .btn--disabled:hover {
   transform: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
-
 .btn--noradius {
   border-radius: 0;
 }
-
 .btn--large {
   height: 52px;
   padding: 0 3.5rem;
   font-size: 2rem;
 }
-
 .btn--small {
   height: 38px;
   line-height: 38px;
   padding: 0 2rem;
   font-size: 1.2rem;
 }
-
 .btn--bordered {
   border: 15px solid radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
 }
 
 @font-face {
-  font-family: 'nunito';
+  font-family: "nunito";
   src: url("/src/fonts/nunito-regular-webfont.woff2") format("woff2"), url("/src/fonts/nunito-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
 .page {
   display: flex;
   flex-direction: column;
@@ -112,16 +96,13 @@
   padding: 1rem;
   margin: 1rem;
 }
-
 .flxbox--backlit {
   background-color: rgba(0, 212, 255, 0.2);
   border-radius: 8px;
 }
-
 .flxbox--col {
   flex-direction: column;
 }
-
 .flxbox--center {
   align-items: center;
   justify-content: center;
@@ -140,7 +121,7 @@ html, body {
 }
 
 body {
-  font-family: 'nunito', sans-serif;
+  font-family: "nunito", sans-serif;
   background: #fff;
   font-size: 1.4rem;
   -webkit-font-smoothing: antialiased;
@@ -155,3 +136,5 @@ body {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+/*# sourceMappingURL=app.css.map */
